@@ -18,15 +18,15 @@ int match(char *T, char *S) {
     return i;
 }
 
-int main() {
-    char * T = "Hello World";
-    // char * S = "lo";
-    char * S = "aaa";
-    int result = match(T, S);
-    if (result > (strlen(T) - strlen(S))) {
-        printf("不匹配\n");
-    } else {
-        printf("%d\n", result);
-    }
-    return 0;
-}
+// int main() {
+//     char * T = "Hello World";
+//     // char * S = "lo";
+//     char * S = "aaa";
+//     int result = match(T, S);
+//     if (result > (strlen(T) - strlen(S))) {
+//         printf("不匹配\n");
+//     } else {
+//         printf("%d\n", result);
+//     }
+//     return 0;
+// }
