@@ -58,6 +58,7 @@ int main() {
             for (int i = 0; i < 5; ++i) {
                 result[i] = switchs;
                 for (int j = 0; j < 6; j++) {
+                    // 上一行不用管，因为已经全部被关？
                     if (GetBit(switchs, j)) {
                         if (j > 0) {
                             FlipBit(lights[i], j-1);
