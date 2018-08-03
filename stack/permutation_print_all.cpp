@@ -4,13 +4,15 @@
 using namespace std;
 
 int counts = 0;
+char *mm = "MAMAMIAM";
 // 输出所有栈混洗
 void enumeratePermutationsAux(int rangeMax, int &pushCount, int &popCount) {
     static std::stack<int> st;
     static std::vector<int> output(rangeMax, 0);
     if (pushCount == rangeMax && popCount == rangeMax) {
         for (int i = 0; i < rangeMax; ++i)
-            std::cout << output[i] << ' ';
+            // std::cout << output[i] << ' ';
+            cout << mm[output[i] - 1] << " ";
         std::cout << "\n";
         counts ++;
     } else {
@@ -39,7 +41,7 @@ void enumeratePermutations(int rangeMax) {
 }
 
 int main() {
-    int n = 4;
+    int n = 8;
     enumeratePermutations(n);
     cout << counts << endl;
 }
