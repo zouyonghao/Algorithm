@@ -54,6 +54,13 @@
  * There will not be any duplicated flights or self cycles.
  * 
  */
+
+// 4
+// [[0,1,1],[0,2,5],[1,2,1],[2,3,1]]
+// 0
+// 3
+// 1
+
 #include <vector>
 #include <iostream>
 using namespace std;
