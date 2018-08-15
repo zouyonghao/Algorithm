@@ -4,9 +4,9 @@
  * https://leetcode-cn.com/problems/sqrtx/description/
  *
  * algorithms
- * Easy (31.11%)
- * Total Accepted:    6K
- * Total Submissions: 19.2K
+ * Easy (31.14%)
+ * Total Accepted:    6.1K
+ * Total Submissions: 19.6K
  * Testcase Example:  '4'
  *
  * 实现 int sqrt(int x) 函数。
@@ -30,21 +30,14 @@
  * 
  * 
  */
-#include <iostream>
-using namespace std;
 class Solution {
 public:
     int mySqrt(int x) {
         double guess = 1.0;
-        while (guess * guess - x > 0.001 || x - guess * guess > 0.001) {
+        while (x - guess * guess > 0.01 || guess * guess - x > 0.01) {
+            // cout << guess << endl;
             guess = (guess + double(x) / guess) / 2.0;
         }
-        return int(guess);
+        return guess;
     }
 };
-
-// int main() {
-//     Solution s;
-//     cout << s.mySqrt(4) << endl;
-//     return 0;
-// }
