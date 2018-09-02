@@ -36,38 +36,65 @@
  * 
  */
 #include<string>
+#include<map>
+#include<iostream>
 using namespace std;
 class Solution {
 public:
+    // bool isIsomorphic(string s, string t) {
+    //     if (s.length() < 1) return true;
+    //     int tmp = -1;
+    //     int* pattern = new int[s.length()];
+    //     pattern[0] = -1;
+    //     for (int i = 0; i < s.length() - 1; ) {
+    //         if (tmp < 0 || s[i] == s[tmp]) {
+    //             i++;
+    //             tmp++;
+    //             pattern[i] = (s[i] != s[tmp] ? tmp : pattern[tmp]);
+    //         } else {
+    //             tmp = pattern[tmp];
+    //         }
+    //     }
+    //     tmp = -1;
+    //     int* pattern2 = new int[t.length()];
+    //     pattern2[0] = -1;
+    //     for (int i = 0; i < t.length() - 1; ) {
+    //         if (tmp < 0 || t[i] == t[tmp]) {
+    //             i++;
+    //             tmp++;
+    //             pattern2[i] = (t[i] != t[tmp] ? tmp : pattern2[tmp]);
+    //         } else {
+    //             tmp = pattern2[tmp];
+    //         }
+    //     }
+    //     for (int i = 0; i < t.length(); i++) {
+    //         if (pattern[i] != pattern2[i]) {
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
     bool isIsomorphic(string s, string t) {
-        int tmp = -1;
-        int* pattern = new int[s.length()];
-        pattern[0] = -1;
-        for (int i = 0; i < s.length(); ) {
-            if (tmp < 0 || s[i] == s[tmp]) {
-                i++;
-                tmp++;
-                pattern[i] = tmp;
-            } else {
-                tmp = pattern[tmp];
+        map<char, int> smap;
+        for (int i = 0; i < s.length(); i++) {
+            if (smap.find(s[i]) == smap.end()) {
+                smap.insert(pair<char, int>(s[i], i));
             }
         }
-        tmp = -1;
-        int* pattern2 = new int[t.length()];
-        pattern2[0] = -1;
-        for (int i = 0; i < t.length(); ) {
-            if (tmp < 0 || t[i] == t[tmp]) {
-                i++;
-                tmp++;
-                pattern2[i] = tmp;
-            } else {
-                tmp = pattern2[tmp];
-            }
+        string pattern;
+        for (int i = 0; i < s.length(); i++) {
+            pattern.push_back(smap[s[i]]);
         }
+        map<char, int> tmap;
         for (int i = 0; i < t.length(); i++) {
-            if (pattern[i] != pattern2[i])
-                return false;
+            if (tmap.find(t[i]) == tmap.end()) {
+                tmap.insert(pair<char, int>(t[i], i));
+            }
         }
-        return true;
+        string pattern2;
+        for (int i = 0; i < t.length(); i++) {
+            pattern2.push_back(tmap[t[i]]);
+        }
+        return pattern == pattern2;
     }
 };
