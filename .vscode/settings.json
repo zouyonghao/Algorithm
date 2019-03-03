@@ -21,6 +21,7 @@
         "map": "cpp",
         "memory": "cpp",
         "streambuf": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "cmath": "cpp"
     }
 }
