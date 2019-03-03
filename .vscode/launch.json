@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "compileJava",
+            "classPaths": ["${workspaceFolder}"],
+            "postDebugTask": "cleanup"
+        },
+        {
+            "preLaunchTask": "build",
+            "name": "launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/a.out",
+            "args": [
+                "-fThreading"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "windows": {
+                "miDebuggerPath": "C:\\bin\\mingw64\\bin\\gdb.exe",
+                "MIMode": "gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": false
+                    }
+                ]
+            },
+            "postDebugTask": "cleanup"
+        }
+    ],
+}
