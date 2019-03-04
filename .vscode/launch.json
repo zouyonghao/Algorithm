@@ -22,17 +22,17 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": true,
+            "externalConsole": false,
             "windows": {
                 "miDebuggerPath": "C:\\bin\\mingw64\\bin\\gdb.exe",
                 "MIMode": "gdb",
-                "setupCommands": [
-                    {
-                        "description": "Enable pretty-printing for gdb",
-                        "text": "-enable-pretty-printing",
-                        "ignoreFailures": false
-                    }
-                ]
+                // "setupCommands": [
+                //     {
+                //         "description": "Enable pretty-printing for gdb",
+                //         "text": "-enable-pretty-printing",
+                //         "ignoreFailures": false
+                //     }
+                // ]
             },
             "postDebugTask": "cleanup"
         }

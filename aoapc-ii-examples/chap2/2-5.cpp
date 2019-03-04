@@ -1,8 +1,9 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int n, count = 0;
-    scanf("%d", &n);
+    int n2, count = 0;
+    scanf("%d", &n2);
+    long long n = n2;
     while (n > 1)
     {
         if (n % 2 == 1)
