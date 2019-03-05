@@ -37,7 +37,7 @@
             ],
             "presentation": {
                 "echo": true,
-                "reveal": "never",
+                "reveal": "always",
                 "focus": false,
                 "panel": "shared",
                 "showReuseMessage": true,
@@ -51,15 +51,15 @@
             "args": [
                 "-encoding",
                 "UTF-8",
-                "${file}"
+                "\"${file}\""
             ],
             "presentation": {
                 "echo": true,
-                "reveal": "never",
-                "focus": false,
+                "reveal": "always",
+                "focus": true,
                 "panel": "shared",
                 "showReuseMessage": true,
-                "clear": false
+                "clear": true
             }
         }
     ]

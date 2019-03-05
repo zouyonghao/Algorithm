@@ -1,0 +1,5 @@
+{
+    "java.completion.guessMethodArguments": true,
+    "java.debug.settings.forceBuildBeforeLaunch": false,
+    "editor.wordWrapColumn": 40
+}
