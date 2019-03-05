@@ -73,15 +73,15 @@ class Solution {
         }
     }
 
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        int[][] obstacleGrid1 = {};
-        System.out.println(s.uniquePathsWithObstacles(obstacleGrid1));
-        int[][] obstacleGrid2 = { { 0, 0, 0 }, { 0, 1, 0 }, { 0, 0, 0 } };
-        System.out.println(s.uniquePathsWithObstacles(obstacleGrid2));
-        int[][] obstacleGrid3 = { { 1 } };
-        System.out.println(s.uniquePathsWithObstacles(obstacleGrid3));
-        int[][] obstacleGrid4 = { { 1, 0 } };
-        System.out.println(s.uniquePathsWithObstacles(obstacleGrid4));
-    }
+    // public static void main(String[] args) {
+    //     Solution s = new Solution();
+    //     int[][] obstacleGrid1 = {};
+    //     System.out.println(s.uniquePathsWithObstacles(obstacleGrid1));
+    //     int[][] obstacleGrid2 = { { 0, 0, 0 }, { 0, 1, 0 }, { 0, 0, 0 } };
+    //     System.out.println(s.uniquePathsWithObstacles(obstacleGrid2));
+    //     int[][] obstacleGrid3 = { { 1 } };
+    //     System.out.println(s.uniquePathsWithObstacles(obstacleGrid3));
+    //     int[][] obstacleGrid4 = { { 1, 0 } };
+    //     System.out.println(s.uniquePathsWithObstacles(obstacleGrid4));
+    // }
 }
