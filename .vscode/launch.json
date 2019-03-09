@@ -23,7 +23,8 @@
             "classPaths": [
                 "${workspaceFolder}"
             ],
-            "postDebugTask": "cleanup"
+            "postDebugTask": "cleanup",
+            "stopOnEntry": false
         },
         {
             "preLaunchTask": "build",
