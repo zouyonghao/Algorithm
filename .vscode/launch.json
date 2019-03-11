@@ -11,7 +11,7 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": true
+            "externalConsole": false
         },
         {
             "type": "java",
@@ -39,7 +39,7 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": true,
+            "externalConsole": false,
             "windows": {
                 "miDebuggerPath": "${env:mingw_path}\\bin\\gdb.exe",
                 "MIMode": "gdb",
