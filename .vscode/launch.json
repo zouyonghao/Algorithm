@@ -24,7 +24,8 @@
                 "${workspaceFolder}"
             ],
             "postDebugTask": "cleanup",
-            "stopOnEntry": false
+            "stopOnEntry": false,
+            "console": "externalTerminal"
         },
         {
             "preLaunchTask": "build",
@@ -38,7 +39,7 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": false,
+            "externalConsole": true,
             "windows": {
                 "miDebuggerPath": "${env:mingw_path}\\bin\\gdb.exe",
                 "MIMode": "gdb",
