@@ -19,5 +19,10 @@
 		"scope": "c, cpp",
 		"prefix": "ct",
 		"body": "#include <stdio.h>\n#define INF 1000000000\nint main()\n{\n#ifdef LOCAL\n\tfreopen(\"data.in\", \"r\", stdin);\n\tfreopen(\"data.out\", \"w\", stdout);\n#endif\n\treturn 0;\n}"
+	},
+	"cct" : {
+		"scope": "c, cpp",
+		"prefix": "cct",
+		"body": "#include <cstdio>\n#include<algorithm>\nusing namespace std;\n#define INF 1000000000\nint main()\n{\n#ifdef LOCAL\n\tfreopen(\"data.in\", \"r\", stdin);\n\tfreopen(\"data.out\", \"w\", stdout);\n#endif\n\treturn 0;\n}"
 	}
 }

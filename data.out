@@ -1,1 +1,8 @@
-%%*\$
+CASE# 1:
+lower_bound test 6447612
+5 found at 4
+CASE# 2:
+lower_bound test 6447608
+2 not found
+lower_bound test 6447608
+3 found at 3
